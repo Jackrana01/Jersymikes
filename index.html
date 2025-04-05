@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Win a Free Jersey Mike's Meal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a2b47;
+      color: #000;
+    }
+    .container {
+      max-width: 420px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .headline {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .checks {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .checks span {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .image {
+      margin: 20px 0;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .subheading {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .email-box {
+      margin: 15px 0;
+    }
+    input[type="email"] {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .continue-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+    }
+    .continue-btn::before,
+    .continue-btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-width: 10px;
+    }
+    .continue-btn::before {
+      left: -20px;
+      border-color: transparent #f00 transparent transparent;
+    }
+    .continue-btn::after {
+      right: -20px;
+      border-color: transparent transparent transparent #f00;
+    }
+    .disclaimer {
+      font-size: 10px;
+      color: #555;
+      margin-top: 15px;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #aaa;
+    }
+    .note {
+      font-size: 10px;
+      color: #888;
+    }
+  </style>
+  <script>
+    function redirectToOffer() {
+      const email = document.getElementById('email').value.trim();
+      if (email) {
+        const encodedEmail = encodeURIComponent(email);
+        const url = `https://smrturl.co/a/sc1a3e7a56b/7288?s1=${encodedEmail}`;
+        window.location.href = url;
+      } else {
+        alert('Please enter your email address.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="headline">ABSOLUTELY FREE!</div>
+    <div class="checks">
+      <span>✅ Free Shipping</span>
+      <span>✅ No Credit Card Required</span>
+    </div>
+    <h3>WIN A FREE JERSEY MIKE'S MEAL</h3>
+    <div class="image">
+      <img src="your-image-path.jpg" alt="Jersey Mike's Meal Offer">
+      <div class="note">*Images used are for representation purposes only.</div>
+    </div>
+    <div class="subheading">Confirm Your Email Address</div>
+    <div class="email-box">
+      <input type="email" id="email" placeholder="Enter Email Address" required>
+    </div>
+    <button class="continue-btn" onclick="redirectToOffer()">Continue</button>
+
+    <div class="disclaimer">
+      By clicking 'Continue', I agree to receive emails from TrendnDaily and its marketing partners. I also agree to the 
+      <a href="#" style="color:blue;">Privacy Policy</a>, 
+      <a href="#" style="color:blue;">Terms of Use</a>, and 
+      <a href="#" style="color:blue;">Official Rules</a> governing this offer.
+      <br><br>
+      This promotion is not sponsored, endorsed, or administered by, or associated with Jersey Mike’s. All trademarks are property of their respective owners.
+    </div>
+    <div class="footer">Limited To One Per Household</div>
+  </div>
+</body>
+</html>
